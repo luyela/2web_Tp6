@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<fieldset>
+    <h1>Bienvenue sur le site de Maxime </h1>
+    <h2>Commencez-donc par vous inscrire :</h2>
+    <h3>login : </h3>
+    <form name="inscription" method="post" action="index.php">
+
+        <table>
+            <tr>
+                <td>
+                    <label for="username">username</label> :<br />
+                    <input type="text" name="plop" id="plop" tabindex="55" />
+                </td>
+                <span class="reussi" ><?php $nomcorrect ?>
+                            </span>
+                <td>
+                    <label for="password">Password</label> :<br/>
+                    <input type="password" name="1234" tabindex="10" />
+                </td>
+                <span class="password"><?php $mon_de_passe_correct ?>
+                            </span>
+                <td>
+                    <input type="checkbox" name="day" value="6" checked="checked" /> Remember me
+                    <input type="submit" name="Remember me " value="log in" />
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</fieldset>
+</body>
+</html>
